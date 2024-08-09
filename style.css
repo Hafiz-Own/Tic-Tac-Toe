@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F5EDED;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellowgreen;
+}
+
+.header {
+    background-color: #6482AD;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    color: #1e33ad;
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+.gamebox {
+    display: grid;
+    height: 30rem;
+    width: 30rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "box0 box1 box2" "box3 box4 box5" "box6 box7 box8";
+    gap: 10px;
+    margin-top: 4rem;
+    background-color: yellowgreen;
+
+}
+
+.box {
+    height: 100%;
+    background-color: rgb(160, 224, 224);
+    border: 2px solid black;
+    font-size: 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.p1indicator {
+    height: 2.5rem;
+    width: 10rem;
+    margin-top: 2.5rem;
+    margin-right: 20.5rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.p2indicator {
+    margin-top: -2.5rem;
+    height: 2.5rem;
+    width: 10rem;
+    margin-left: 20.5rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.reset {
+    height: 3rem;
+    width: 7rem;
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+    background-color: red;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.winnermsg {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10rem;
+    background-color: green;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.winmsg {
+    justify-content: center;
+}
+
+.replay {
+    height: 3rem;
+    width: 7rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    background-color: red;
+    font-size: 1.25rem;
+    color: white;
+}
